@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>vue ajax</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>API CALL TEST with Vue.JS</h1>
+    <div id="app">
+        <div>
+            <p>URL</p>
+            <input type="text" id="url" v-model="url" size="60">
+        </div>
+        <div>
+            <button v-on:click="get">GET</button>
+        </div>
+        <div>
+            <p>RESULT</p>
+            <textarea v-model="result" cols="60" rows="10"></textarea>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="./main.js"> </script>
+</body>
+
+</html>
